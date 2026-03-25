@@ -1,0 +1,26 @@
+{
+  "name": "sealedmail-mcp",
+  "version": "0.1.1",
+  "mcpName": "io.github.thesuitabs/sealedmail",
+  "description": "MCP server for SealedMail — lets AI agents send and receive on-chain private messages via SealedMail on Sui",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesuitabs/sealedmail.git"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "sealedmail-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "@mysten/sui": "^1.21.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
