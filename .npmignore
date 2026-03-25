@@ -1,0 +1,4 @@
+.mcpregistry_*
+*.env
+.env*
+node_modules/
