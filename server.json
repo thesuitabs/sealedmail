@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.thesuitabs/sealedmail",
+  "version": "0.1.1",
+  "description": "Send and receive on-chain private messages via SealedMail on Sui. No browser wallet needed.",
+  "packages": [
+    {
+      "registryType": "npm",
+      "name": "sealedmail-mcp",
+      "identifier": "sealedmail-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SEALEDMAIL_PRIVATE_KEY",
+          "description": "Your Sui wallet private key (suiprivkey1... format from sui keytool export)",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/thesuitabs/sealedmail",
+    "source": "github"
+  }
+}
